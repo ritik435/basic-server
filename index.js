@@ -15,12 +15,12 @@ app.get('/about', (req, res) => {
 })
 app.get("/", (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
-  res.json({ message: "Hello from Users!" });
+  res.json({ message: "Hello from Server!" });
 });
 
 app.get("/users", (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
-  res.json({ message: "Hello from server!" });
+  res.json({ message: "Users ko call " });
 });
 
 
