@@ -6,13 +6,22 @@ const app= Express();
 app.listen(PORT,function(){
   console.log(`listening at http://localhost:${PORT}`);
 })
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
+// app.get('/', (req, res) => {
+//   res.send('Hey this is my API running 🥳')
+// })
 
 app.get('/about', (req, res) => {
   res.send('This is my about route..... ')
 })
+app.get("/", (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  res.json({ message: "Hello from server!" });
+});
+
+app.get("/users", (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  res.json({ message: "Hello from server!" });
+});
 
 
 // Export the Express API
