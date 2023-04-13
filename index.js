@@ -15,7 +15,7 @@ app.get('/about', (req, res) => {
 })
 app.get("/", (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
-  res.json({ message: "Hello from Server!" });
+  res.json({ message: "kuch nhi h Server!" });
 });
 
 app.get("/users", (req, res) => {
