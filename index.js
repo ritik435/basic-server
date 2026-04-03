@@ -10,8 +10,15 @@ app.listen(PORT,function(){
 //   res.send('Hey this is my API running 🥳')
 // })
 
+
+
+
+
+
 app.get('/about', (req, res) => {
+  console.log('This is about route')
   res.send('This is my about route..... ')
+
 })
 app.get("/", (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
